@@ -398,6 +398,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    var router = _getRoutes();
+
     return
         // 在此处导入默认主题
         TDTheme(
@@ -412,7 +414,7 @@ class MyApp extends StatelessWidget {
             ? null
             : const MyHomePage(title: 'TDesgin Flutter 组件库'),
         onGenerateRoute: TDExampleRoute.onGenerateRoute,
-        routes: _getRoutes(),
+        routes: router,
       ),
     );
   }
