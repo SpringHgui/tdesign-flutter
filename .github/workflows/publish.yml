@@ -25,6 +25,6 @@ jobs:
         run: |
           cd tdesign-component
           pwd
-          flutter pub publish --server=https://pub.dartlang.org
+          flutter pub publish -f --server=https://pub.dartlang.org
         
  
